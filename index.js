@@ -9,7 +9,7 @@ const app = express();
 //Node server
 const server = require('http').createServer(app);
 module.exports.io = require('socket.io')(server);
-require('./sockets/sockets');
+require('./sockets/sockets.js');
 
 //Path público
 const publicPath = path.resolve(__dirname, 'public');
